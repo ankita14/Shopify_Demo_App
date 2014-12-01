@@ -1,0 +1,9 @@
+<% if @orders.blank? %>
+	There are no orders in your store.
+<% else %>
+	<% @orders.each do |order| %>
+		<%= order.cart_token %>
+		<%= order.note_attributes %>
+		<hr/>
+	<% end %>
+<% end %>

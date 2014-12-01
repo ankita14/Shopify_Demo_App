@@ -1,0 +1,37 @@
+<center>
+  <h1>Create New Order</h1>
+
+<br/>
+<div class="row">
+  <div class="span6 offset3">
+    <%#= form_for :customer, url: home_create_path do |f| %>
+    <form action="https://34f882e8cd8473c368a8a01df1a355b7:56cc65954df4c43e6f83c322e97192fa@deliciousfood.myshopify.com/admin/orders.json" method="post" enctype="application/json" >
+
+      Product Name:<br>
+      <input type="text" name="order[variant_id]" value="343034639">
+      <br>
+      Quantity:<br>
+      <input type="text" name="order[quantity]" value="2">
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+
+      <%#= f.label :first_name %>
+      <%#= f.text_field :first_name %>
+
+      <%#= f.label :last_name %>
+      <%#= f.text_field :last_name %>
+
+      <%#= f.label :email %>
+      <%#= f.text_field :email %>
+
+      <%#= f.label :password %>
+      <%#= f.password_field :password %>
+      
+      <br/>
+
+      <%#= f.submit "Create new Customer", class: "btn btn-large btn-primary" %>
+    <%# end %>
+  </div>
+</div>
+</center>
