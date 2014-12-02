@@ -55,7 +55,7 @@ gem 'shopify_app'
 gem 'httparty'
 gem 'omniauth-shopify-oauth2'
 
-group :development, :test do
+# group :development, :test do
   gem "less-rails-bootstrap"
   gem 'therubyracer', :platform => :ruby
-end
+# end
